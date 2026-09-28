@@ -39,6 +39,7 @@
       background-attachment: fixed;
       line-height: 1.6;
       overflow-x: hidden;
+      top: 0px !important;
     }
 
     /* Scroll Reveal Animationer */
@@ -72,6 +73,40 @@
     .nav-links a:hover { color: var(--accent-blue); }
     
     .nav-right { display: flex; align-items: center; gap: 15px; }
+
+    /* Google Translate Styling */
+    #google_translate_element {
+      display: inline-block;
+    }
+    .goog-te-gadget {
+      font-family: 'Inter', sans-serif !important;
+      font-size: 0.85rem !important;
+      color: #334155 !important;
+    }
+    .goog-te-gadget-simple {
+      background-color: rgba(255, 255, 255, 0.85) !important;
+      border: 1px solid var(--border-light) !important;
+      padding: 6px 12px !important;
+      border-radius: 20px !important;
+      cursor: pointer !important;
+      display: flex !important;
+      align-items: center !important;
+      backdrop-filter: blur(5px) !important;
+      transition: all 0.2s ease !important;
+    }
+    .goog-te-gadget-simple:hover {
+      border-color: var(--accent-blue) !important;
+      background: #ffffff !important;
+    }
+    .goog-te-menu-value span {
+      color: #334155 !important;
+      font-weight: 600 !important;
+    }
+    .goog-te-banner-frame.skiptranslate, 
+    .goog-logo-link, 
+    .gsi-material-button {
+      display: none !important;
+    }
 
     /* Buttons */
     .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 14px 28px; border-radius: 50px; font-weight: 600; text-decoration: none; cursor: pointer; transition: all 0.3s ease; border: none; font-size: 0.95rem; }
@@ -333,6 +368,9 @@
       </ul>
 
       <div class="nav-right">
+        <!-- GOOGLE TRANSLATE TOGGLE -->
+        <div id="google_translate_element"></div>
+
         <a href="#onboarding" onclick="switchFormMode('widget')" class="btn btn-primary">Opret Widget Nu <i class="fa-solid fa-arrow-right"></i></a>
       </div>
     </div>
@@ -1033,6 +1071,19 @@
       initCookieBubble();
     });
   </script>
+
+  <!-- Google Translate Script -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'da',
+        includedLanguages: 'en,da,de,sv,no',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        autoDisplay: false
+      }, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
   <!-- UniqIQ Official Webhook Widget integration -->
   <script src="https://www.stream.unikiq.dk/widget.js" data-client-id="unikiq_dk" defer></script>
