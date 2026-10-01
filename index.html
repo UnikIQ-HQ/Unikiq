@@ -809,7 +809,20 @@
 
   <!-- SCRIPT LOGIK -->
   <script>
-    // 0. High-Tech Funktioner, Cookie & Formular-Skift
+    // 0. UNIKLQ SITE ANALYTICS EVENT TRACKER
+    function trackAnalyticsEvent(eventType, pagePath = window.location.pathname) {
+      fetch('https://n8n.unikiq.dk/webhook/site-analytics', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          client_id: 'unikiq_dk',
+          event_type: eventType,
+          page_path: pagePath
+        })
+      }).catch(err => console.error('Analytics tracking error:', err));
+    }
+
+    // High-Tech Funktioner, Cookie & Formular-Skift
     function initHighTechFeatures() {
       document.getElementById('current-year').innerText = new Date().getFullYear();
 
@@ -1114,6 +1127,9 @@
         });
         
         if (response.ok) {
+          // Registrér konvertering i analytics tabellen
+          trackAnalyticsEvent('form_submit');
+
           if (payload.type === 'widget') {
             alert('Tillykke! Din Chat Widget er oprettet. Tjek din e-mail for instruktioner og installeringskode.');
           } else {
@@ -1139,6 +1155,9 @@
       initHighTechFeatures();
       initCookieBubble();
       selectCategory('single'); // Initialisér kataloget direkte ved load
+
+      // Tæl automatisk sidevisning til site_analytics tabellen
+      trackAnalyticsEvent('pageview');
     });
   </script>
 
