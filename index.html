@@ -2,8 +2,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UniklQ | Intelligente AI Workflows & Digitale Medarbejdere</title>
-  <meta name="description" content="Frigør tid med intelligente AI-agenter skræddersyet til din branche. Automatisér kontaktformularer, kundeservice og tunge rutineopgaver med UniklQ.">
+  <title>UniklQ | Smart Sites, AI Workflows & Digitale Medarbejdere</title>
+  <meta name="description" content="Frigør tid med lynhurtige Smart Sites, intelligente AI-agenter og automatiserede workflows. Slut cirklen for din digitale forretning med UniklQ.">
   
   <link rel="icon" href="https://framerusercontent.com/images/wyg3uNFx6UKKha1DK57Z7vOmBI.png">
   <link href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -156,6 +156,7 @@
 
     .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; }
     .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
 
     /* Cards */
     .card { 
@@ -228,10 +229,10 @@
     .modal-actions { display: flex; gap: 15px; margin-top: 30px; }
 
     /* HYBRID ONBOARDING & KONTAKT FORMULAR */
-    .unikiq-form-card { max-width: 680px; margin: 0 auto; padding: 40px; background: var(--card-bg-dark); border-radius: 24px; border: 1px solid var(--border-dark); box-shadow: 0 20px 40px rgba(0,0,0,0.3); color: #ffffff; }
+    .unikiq-form-card { max-width: 780px; margin: 0 auto; padding: 40px; background: var(--card-bg-dark); border-radius: 24px; border: 1px solid var(--border-dark); box-shadow: 0 20px 40px rgba(0,0,0,0.3); color: #ffffff; }
     
-    .form-tabs { display: flex; justify-content: center; gap: 8px; margin-bottom: 25px; background: var(--card-inner-dark); padding: 6px; border-radius: 30px; border: 1px solid var(--border-dark); }
-    .form-tab { flex: 1; text-align: center; padding: 10px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; color: #94a3b8; cursor: pointer; transition: all 0.2s ease; }
+    .form-tabs { display: flex; justify-content: center; gap: 6px; margin-bottom: 25px; background: var(--card-inner-dark); padding: 6px; border-radius: 30px; border: 1px solid var(--border-dark); flex-wrap: wrap; }
+    .form-tab { flex: 1; text-align: center; padding: 10px 12px; border-radius: 20px; font-size: 0.82rem; font-weight: 600; color: #94a3b8; cursor: pointer; transition: all 0.2s ease; min-width: 120px; }
     .form-tab.active { background: var(--accent-blue); color: #ffffff; box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3); }
 
     .unikiq-form { display: flex; flex-direction: column; gap: 20px; }
@@ -339,7 +340,7 @@
     @media (max-width: 768px) {
       .hero h1 { font-size: 2.6rem; flex-direction: column; gap: 5px; }
       .nav-links { display: none; }
-      .grid-2, .grid-3 { grid-template-columns: 1fr; }
+      .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
       .unikiq-field-row { flex-direction: column; }
       .category-select-wrapper { flex-direction: column; width: 100%; }
       .main-cat-btn { width: 100%; justify-content: center; }
@@ -381,22 +382,22 @@
   <!-- Hero Section -->
   <section class="hero reveal">
     <h1>
-      Intelligente 
+      Smart Sites &
       <span class="ai-badge"><i class="fa-solid fa-wand-magic-sparkles"></i> AI</span> 
       Workflows
     </h1>
     
-    <p>Automatisér jeres kontaktformularer, tilbudsgenerering og trivielle hverdagsopgaver. Med en digital medarbejder får kunden svar på få sekunder, mens I sparer timer på manuelt tastearbejde.</p>
+    <p>Vi slutter cirklen for din digitale tilstedeværelse. Kombinér lynhurtige Smart Sites med autonome AI-agenter og automatiserede workflows, der konverterer besøgende og driver driften 24/7.</p>
     
     <div class="hero-buttons">
-      <a href="#onboarding" onclick="switchFormMode('widget')" class="btn btn-primary">Opret gratis widget på 60 sek. <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="#onboarding" onclick="switchFormMode('smart_site')" class="btn btn-primary">Få Smart Site Tilbud <i class="fa-solid fa-arrow-right"></i></a>
       <a href="#dma-catalog" class="btn btn-secondary">Udforsk DMA-Kataloget</a>
     </div>
 
     <div class="hero-features">
-      <span><i class="fa-solid fa-star" style="color: #f59e0b;"></i> Ingen binding & transparent pris</span>
+      <span><i class="fa-solid fa-star" style="color: #f59e0b;"></i> Fuldstændig integreret økosystem</span>
       <span><i class="fa-solid fa-shield-halved" style="color: #10b981;"></i> 100% data-ejerskab & GDPR</span>
-      <span><i class="fa-solid fa-bolt" style="color: #3b82f6;"></i> Start din automatiseringsproces med lynets hast</span>
+      <span><i class="fa-solid fa-bolt" style="color: #3b82f6;"></i> Live analytics & daglig AI-rapport</span>
     </div>
   </section>
 
@@ -407,19 +408,19 @@
       <div class="reveal">
         <span class="badge" style="margin-bottom: 10px;">Om UniklQ</span>
         <h2 style="font-family: 'Caladea', serif; font-size: 2.8rem; font-weight: 700; color: #0f172a; margin-bottom: 20px; line-height: 1.2;">
-          Vi bygger fremtidens digitale arbejdsstyrke – AI-first fra grunden
+          Vi lukker cirklen – Fra første besøg til udført arbejdsgang
         </h2>
         <p style="color: #475569; font-size: 1.05rem; margin-bottom: 20px; line-height: 1.7;">
-          UniklQ er et fuldt AI-first bureau og softwarehus. Vi tror ikke på tunge, manuelle processer eller overkomplicerede løsninger. I stedet opbygger vi intelligente, autonome workflows og digitale medarbejdere, der overtager rutinepræget taste- og supportarbejde for din virksomhed.
+          UniklQ er et fuldt AI-first bureau og softwarehus. Hvor traditionelle webbureauer kun leverer et flot visittkort, og automation-huse kun arbejder i baggrunden – forener vi begge verdener.
         </p>
         <p style="color: #475569; font-size: 1.05rem; margin-bottom: 25px; line-height: 1.7;">
-          Alt vores infrastruktur kører på private, containeriserede servere i lukkede miljøer. Det betyder 100% datasikkerhed, fuld GDPR-overholdelse og nul deling af jeres forretningsdata med offentlige LLM-modeller.
+          Vores Smart Sites leveres fuldt præ-integrerede med AI-agenter, automatisk hændelses-tracking og n8n-workflows. Et klik på hjemmesiden føder direkte dit CRM, sender tilbud og leverer en overskuelig morgenrapport i din indbakke.
         </p>
 
         <div style="display: flex; gap: 20px; flex-wrap: wrap;">
           <div>
             <h3 style="font-size: 1.8rem; font-weight: 700; color: var(--accent-blue);">100%</h3>
-            <p style="font-size: 0.85rem; color: #64748b; font-weight: 600;">Privat & Sikker Hosting</p>
+            <p style="font-size: 0.85rem; color: #64748b; font-weight: 600;">Sluttet Cirkel</p>
           </div>
           <div style="border-left: 1px solid var(--border-light); padding-left: 20px;">
             <h3 style="font-size: 1.8rem; font-weight: 700; color: var(--accent-blue);">&lt; 48t</h3>
@@ -435,21 +436,21 @@
       <!-- Arkitektur High-Tech Grafisk Boks -->
       <div class="reveal" style="background: var(--card-bg-dark); border: 1px solid var(--border-dark); border-radius: 24px; padding: 35px; color: #ffffff; box-shadow: 0 20px 40px rgba(0,0,0,0.25);">
         <h3 style="font-family: 'Caladea', serif; font-size: 1.6rem; margin-bottom: 20px; color: #ffffff; display: flex; align-items: center; gap: 10px;">
-          <i class="fa-solid fa-server" style="color: #38bdf8;"></i> UniklQ Core Engine
+          <i class="fa-solid fa-server" style="color: #38bdf8;"></i> UniklQ Smart Engine
         </h3>
         
         <ul style="list-style: none; display: flex; flex-direction: column; gap: 16px;">
           <li style="display: flex; align-items: flex-start; gap: 12px; font-size: 0.95rem; color: #cbd5e1;">
+            <i class="fa-solid fa-laptop-code" style="color: var(--accent-blue); margin-top: 4px;"></i>
+            <span><b>UniklQ Smart Sites:</b> Lynhurtige, responsive hjemmesider bygget til maksimal konvertering.</span>
+          </li>
+          <li style="display: flex; align-items: flex-start; gap: 12px; font-size: 0.95rem; color: #cbd5e1;">
             <i class="fa-solid fa-microchip" style="color: var(--accent-blue); margin-top: 4px;"></i>
-            <span><b>Auto Orchestration:</b> Intelligente task runners, der forbinder jeres CRM, ERP og e-mail.</span>
+            <span><b>n8n Orchestration:</b> Intelligente task runners, der forbinder jeres CRM, ERP og e-mail.</span>
           </li>
           <li style="display: flex; align-items: flex-start; gap: 12px; font-size: 0.95rem; color: #cbd5e1;">
             <i class="fa-solid fa-database" style="color: var(--accent-blue); margin-top: 4px;"></i>
             <span><b>Qdrant Vector DB:</b> RAG-baseret søgning i virksomhedens videnbase i realtid.</span>
-          </li>
-          <li style="display: flex; align-items: flex-start; gap: 12px; font-size: 0.95rem; color: #cbd5e1;">
-            <i class="fa-solid fa-lock" style="color: var(--accent-blue); margin-top: 4px;"></i>
-            <span><b>Egen Container platform:</b> Afvikles isoleret på Coolify / Docker på UniklQ servere.</span>
           </li>
         </ul>
 
@@ -465,82 +466,101 @@
   <!-- DMA KATALOG SEKTION -->
   <section class="section" id="dma-catalog">
     <div class="section-title reveal">
-      <h2>Vores Digitale Medarbejdere (DMA)</h2>
-      <p>Brug kataloget nedenfor som inspiration til, hvordan en digital medarbejder kan tilpasses din virksomhed. Vælg en enkelt funktion eller sammensæt et helt team til at løfte dine opgaver.</p>
+      <h2>Vores Digitale Medarbejdere (DMA) & Smart Sites</h2>
+      <p>Brug kataloget nedenfor som inspiration til, hvordan en digital medarbejder eller et Smart Site kan tilpasses din virksomhed.</p>
     </div>
 
     <div class="category-select-wrapper reveal">
       <button class="main-cat-btn" id="btn-single" onclick="selectCategory('single')">
-        <i class="fa-solid fa-user-gear"></i> Enkelte DMA'er
+        <i class="fa-solid fa-user-gear"></i> Enkelte Ydelser & Sites
       </button>
       <button class="main-cat-btn" id="btn-team" onclick="selectCategory('team')">
-        <i class="fa-solid fa-users-gear"></i> DMA Teams
+        <i class="fa-solid fa-users-gear"></i> DMA Teams & Løsninger
       </button>
     </div>
 
     <div class="grid-3" id="dma-grid"></div>
   </section>
 
-  <!-- LØSNINGER & PRISER SEKTION -->
+  <!-- LØSNINGER & PRISER SEKTION (OPDATERET TRAPPE-MODEL) -->
   <section class="section" id="solutions">
     <div class="section-title reveal">
-      <h2>Fleksibel prisstruktur uden binding</h2>
-      <p>I betaler kun for reel værdi – test teknikken før I bestemmer jer.</p>
+      <h2>Gennemskuelige priser uden binding</h2>
+      <p>Vælg præcis den løsning, der passer til dit behov – fra en enkel gratis test til et komplet Smart Site økosystem.</p>
     </div>
 
-    <div class="grid-3" id="pricing">
-      <!-- Pakke 1 -->
+    <div class="grid-4" id="pricing">
+      
+      <!-- Pakke 1: Gratis AI Widget Test -->
       <div class="card reveal">
         <div>
           <div class="card-icon"><i class="fa-solid fa-robot"></i></div>
           <h3>Gratis AI Widget</h3>
-          <p>Perfekt til dig, der vil i gang med automatisering med det samme uden risiko.</p>
+          <p>Test AI-chatten kvit og frit på din eksisterende hjemmeside uden risiko.</p>
           <div class="card-price">0 kr. <span style="font-size:1rem; font-weight:400; color:#64748b">/ mdr</span></div>
           <ul class="card-list">
             <li><i class="fa-solid fa-check"></i> Gratis opsætning</li>
-            <li><i class="fa-solid fa-check"></i> Trænes direkte i jeres tone of voice</li>
+            <li><i class="fa-solid fa-check"></i> Trænes i din tone of voice</li>
             <li><i class="fa-solid fa-check"></i> 24/7 automatisk kundeservice</li>
-            <li><i class="fa-solid fa-check"></i> Gratis indtil den har bevist sin værdi</li>
+            <li><i class="fa-solid fa-check"></i> Gratis indtil den er testet af</li>
           </ul>
         </div>
-        <a href="#onboarding" onclick="switchFormMode('widget')" class="btn btn-secondary" style="width:100%; justify-content:center;">Kom i gang på 60 sek.</a>
+        <a href="#onboarding" onclick="switchFormMode('widget')" class="btn btn-secondary" style="width:100%; justify-content:center;">Prøv gratis nu</a>
       </div>
 
-      <!-- Pakke 2: Avanceret DMA -->
-      <div class="card reveal" style="border-color: var(--accent-blue)">
+      <!-- Pakke 2: Kun AI Chat Widget (Eksisterende side) -->
+      <div class="card reveal">
         <div>
-          <div class="card-icon"><i class="fa-solid fa-gears"></i></div>
-          <h3>Avanceret DMA</h3>
-          <p>Til virksomheden der vil have fuld fart på automatisering, CRM og tilbudsflow.</p>
-          <div class="card-price">Fra 499 kr. <span style="font-size:1rem; font-weight:400; color:#64748b">/ mdr</span></div>
+          <div class="card-icon"><i class="fa-solid fa-comments"></i></div>
+          <h3>AI Chat Widget</h3>
+          <p>Til dig der har en god hjemmeside, men ønsker en intelligent AI-assistent koblet på.</p>
+          <div class="card-price">495 kr. <span style="font-size:1rem; font-weight:400; color:#64748b">/ mdr</span></div>
           <ul class="card-list">
-            <li><i class="fa-solid fa-check"></i> Opsætning fra 999 kr.</li>
-            <li><i class="fa-solid fa-check"></i> Inkluderer 100 handlinger / mdr.</li>
-            <li><i class="fa-solid fa-check"></i> Fuldt integrerede workflows</li>
-            <li><i class="fa-solid fa-check"></i> Integration til CRM & E-mail systemer</li>
-            <li><i class="fa-solid fa-check"></i> Avancerede API-integrationer</li>
+            <li><i class="fa-solid fa-check"></i> Engangsopsætning: 995 kr.</li>
+            <li><i class="fa-solid fa-check"></i> 100% tilpasset brand & farver</li>
+            <li><i class="fa-solid fa-check"></i> Integration til e-mail & CRM</li>
+            <li><i class="fa-solid fa-check"></i> Daglig AI Morgenrapport</li>
           </ul>
         </div>
-        <a href="#onboarding" onclick="switchFormMode('pro')" class="btn btn-primary" style="width:100%; justify-content:center;">Vælg denne løsning</a>
+        <a href="#onboarding" onclick="switchFormMode('pro')" class="btn btn-secondary" style="width:100%; justify-content:center;">Vælg Chat Widget</a>
       </div>
 
-      <!-- Pakke 3: Skræddersyet Løsning -->
+      <!-- Pakke 3: Komplet Smart Site Pakke (FREMHÆVET) -->
+      <div class="card reveal" style="border-color: var(--accent-blue); background: rgba(255, 255, 255, 0.98);">
+        <div>
+          <div class="card-icon"><i class="fa-solid fa-laptop-code" style="color: var(--accent-blue);"></i></div>
+          <span class="badge" style="margin-bottom:10px;">Komplet Løsning</span>
+          <h3>UniklQ Smart Site</h3>
+          <p>Lynhurtigt nyt webdesign med alt præ-installeret. Vi slutter cirklen for dig.</p>
+          <div class="card-price">995 kr. <span style="font-size:1rem; font-weight:400; color:#64748b">/ mdr</span></div>
+          <ul class="card-list">
+            <li><i class="fa-solid fa-check"></i> Engangsopsætning: 4.995 kr.</li>
+            <li><i class="fa-solid fa-check"></i> Fuldstændig nyt Smart Site design</li>
+            <li><i class="fa-solid fa-check"></i> Præ-installeret AI Widget & Tracking</li>
+            <li><i class="fa-solid fa-check"></i> Automatiserede n8n Workflows</li>
+            <li><i class="fa-solid fa-check"></i> Inkl. hosting, drift & morgenrapporter</li>
+          </ul>
+        </div>
+        <a href="#onboarding" onclick="switchFormMode('smart_site')" class="btn btn-primary" style="width:100%; justify-content:center;">Få Komplet Smart Site</a>
+      </div>
+
+      <!-- Pakke 4: Skræddersyet / Enterprise -->
       <div class="card reveal">
         <div>
           <div class="card-icon"><i class="fa-solid fa-sliders"></i></div>
           <h3>Skræddersyet Løsning</h3>
-          <p>Til større virksomheder eller tunge workflows med specielle ønsker og høj volumen.</p>
+          <p>Til større virksomheder eller tunge workflows med specielle integrationer.</p>
           <div class="card-price">Kontakt os <span style="font-size:1rem; font-weight:400; color:#64748b">/ tilbud</span></div>
           <ul class="card-list">
             <li><i class="fa-solid fa-check"></i> Ubegrænset volumen & handlinger</li>
             <li><i class="fa-solid fa-check"></i> Skræddersyede DMA Teams & afdelinger</li>
-            <li><i class="fa-solid fa-check"></i> Dedikerede servere & egen infrastruktur</li>
+            <li><i class="fa-solid fa-check"></i> Dedikerede servere & egen VPS</li>
             <li><i class="fa-solid fa-check"></i> SLA-garanti & direkte support</li>
-            <li><i class="fa-solid fa-check"></i> Tilpasset kompleks B2B-integration</li>
           </ul>
         </div>
         <a href="#onboarding" onclick="switchFormMode('custom')" class="btn btn-secondary" style="width:100%; justify-content:center;">Indhent tilbud</a>
       </div>
+
     </div>
   </section>
 
@@ -551,8 +571,9 @@
       <!-- Formular Faner -->
       <div class="form-tabs">
         <div class="form-tab active" id="tab-widget" onclick="switchFormMode('widget')">Gratis AI Widget</div>
-        <div class="form-tab" id="tab-pro" onclick="switchFormMode('pro')">Avanceret DMA</div>
-        <div class="form-tab" id="tab-custom" onclick="switchFormMode('custom')">Skræddersyet / Enterprise</div>
+        <div class="form-tab" id="tab-pro" onclick="switchFormMode('pro')">AI Chat Widget (495 kr.)</div>
+        <div class="form-tab" id="tab-smart-site" onclick="switchFormMode('smart_site')">Smart Site (995 kr.)</div>
+        <div class="form-tab" id="tab-custom" onclick="switchFormMode('custom')">Enterprise</div>
       </div>
 
       <div class="section-title" style="margin-bottom: 25px;">
@@ -616,7 +637,7 @@
 
         <div class="unikiq-field" id="field-message" style="display:none;">
           <label for="message">Beskriv dine ønsker / behov <span class="unikiq-optional">(Valgfrit)</span></label>
-          <textarea id="message" name="message" placeholder="Fortæl os kort om hvilke opgaver eller workflows du ønsker automatiseret..."></textarea>
+          <textarea id="message" name="message" placeholder="Fortæl os kort om dine ønsker til et Smart Site eller dine automatiseringer..."></textarea>
         </div>
 
         <button type="submit" class="unikiq-submit-btn" id="submit-btn">
@@ -632,13 +653,13 @@
   <section class="section dark-section" id="use-cases">
     <div class="section-title reveal">
       <h2>Hvem bruger UniklQ?</h2>
-      <p>Skræddersyede AI-medarbejdere der løser specifikke flaskehalse i din branche.</p>
+      <p>Skræddersyede AI-medarbejdere og Smart Sites der løser specifikke flaskehalse i din branche.</p>
     </div>
 
     <div class="grid-3">
       <div class="card reveal">
         <h3>Håndværk & Byggeri</h3>
-        <p>Slip for at bruge aftenen på tilbud og skemaer. Vores AI screener opgaver, indsamler billeder og booker besigtigelser direkte i din kalender.</p>
+        <p>Slip for at bruge aftenen på tilbud og skemaer. Vores Smart Sites og AI screener opgaver, indsamler billeder og booker besigtigelser direkte i din kalender.</p>
         <span style="color:var(--accent-blue); font-weight:600;">+12 timer sparret om ugen</span>
       </div>
 
@@ -659,13 +680,13 @@
   <!-- Sådan virker det -->
   <section class="section" id="how-it-works">
     <div class="steps-container reveal">
-      <h2 style="font-family: 'Caladea', serif; font-size: 2.2rem; margin-bottom: 40px; text-align: center; color:#0f172a;">Få din nye digitale medarbejder i 3 trin</h2>
+      <h2 style="font-family: 'Caladea', serif; font-size: 2.2rem; margin-bottom: 40px; text-align: center; color:#0f172a;">Slut cirklen i 3 trin</h2>
       
       <div class="step-item">
         <div class="step-number">1</div>
         <div class="step-content">
-          <h4>Beskriv dit behov / Opret Widget</h4>
-          <p>Udfyld formularen ovenfor med din URL og e-mail for at modtage din unikke chat-kode.</p>
+          <h4>Vælg Smart Site eller AI Widget</h4>
+          <p>Udfyld formularen ovenfor med din URL og e-mail for at starte din opsætning.</p>
         </div>
       </div>
 
@@ -680,8 +701,8 @@
       <div class="step-item">
         <div class="step-number">3</div>
         <div class="step-content">
-          <h4>Test live på under 48 timer</h4>
-          <p>I får et færdigt, køreklar interface. AI-medarbejderen svarer jeres kunder øjeblikkeligt fra dag ét.</p>
+          <h4>Test live & modtag daglige rapporter</h4>
+          <p>I får et færdigt, køreklar økosystem. Hver morgen modtager du en AI-rapport over døgnets aktivitet.</p>
         </div>
       </div>
     </div>
@@ -695,13 +716,13 @@
 
     <div class="grid-2">
       <div class="card reveal">
-        <h3>Hvor sikre er mine data?</h3>
-        <p>Dine data er 100% beskyttet på vores egne private servere på en lukket VPS. Vi bruger ikke 3.-parts cloud-systemer, hvor dine data deles eller bruges til træning.</p>
+        <h3>Hvad er et UniklQ Smart Site?</h3>
+        <p>Et Smart Site er en lynhurtig, moderne hjemmeside bygget af UniklQ, som fødes præ-installeret med AI Chat Widget, automatisk tracking og tilsluttede n8n workflows.</p>
       </div>
 
       <div class="card reveal">
-        <h3>Mister vi kontrollen med AI?</h3>
-        <p>Nej. AI'en følger stramt opstillede retningslinjer (System Prompts). Ved uafklarede eller følsomme henvendelser stiller den automatisk kunden om til et menneske.</p>
+        <h3>Hvor sikre er mine data?</h3>
+        <p>Dine data er 100% beskyttet på vores egne private servere på en lukket VPS. Vi bruger ikke 3.-parts cloud-systemer, hvor dine data deles eller bruges til træning.</p>
       </div>
     </div>
   </section>
@@ -733,7 +754,7 @@
     <div class="footer-grid">
       <div class="footer-col">
         <h4>UniklQ Engine</h4>
-        <p style="color:#94a3b8; font-size:0.95rem;">Forløs dit fulde potentiale med tid til overs og glæde i driften.</p>
+        <p style="color:#94a3b8; font-size:0.95rem;">Forløs dit fulde potentiale med Smart Sites og automatiserede workflows.</p>
       </div>
 
       <div class="footer-col">
@@ -774,7 +795,7 @@
       </div>
 
       <div class="modal-body">
-        <h4 style="margin-bottom:8px; font-size:1.1rem; color:#0f172a;">Om denne medarbejder:</h4>
+        <h4 style="margin-bottom:8px; font-size:1.1rem; color:#0f172a;">Om denne løsning:</h4>
         <p id="modal-description" style="color:#475569; font-size:0.95rem;">Beskrivelse...</p>
 
         <div class="roi-box">
@@ -868,6 +889,7 @@
     function switchFormMode(mode) {
       const tabWidget = document.getElementById('tab-widget');
       const tabPro = document.getElementById('tab-pro');
+      const tabSmartSite = document.getElementById('tab-smart-site');
       const tabCustom = document.getElementById('tab-custom');
       
       const formTitle = document.getElementById('form-title');
@@ -882,13 +904,14 @@
       // Nulstil aktive faner
       tabWidget.classList.remove('active');
       tabPro.classList.remove('active');
+      tabSmartSite.classList.remove('active');
       tabCustom.classList.remove('active');
 
       if (mode === 'widget') {
         tabWidget.classList.add('active');
         formTypeInput.value = 'widget';
-        formTitle.innerText = 'Opret din AI Chat Widget';
-        formSubtitle.innerText = 'Udfyld felterne nedenfor for at få genereret din unikke widget-kode på under 1 minut.';
+        formTitle.innerText = 'Opret din Gratis AI Chat Widget';
+        formSubtitle.innerText = 'Udfyld felterne nedenfor for at få genereret din unikke test-kode med det samme.';
         btnText.innerText = 'Opret min Chat Widget';
 
         rowWidgetFields.style.display = 'flex';
@@ -898,18 +921,29 @@
       else if (mode === 'pro') {
         tabPro.classList.add('active');
         formTypeInput.value = 'avanceret_dma';
-        formTitle.innerText = 'Bestil Avanceret DMA';
-        formSubtitle.innerText = 'Udfyld formularen for at starte opsætningen af jeres avancerede automatiseringsmotor.';
-        btnText.innerText = 'Indsend forespørgsel';
+        formTitle.innerText = 'Bestil AI Chat Widget (495 kr./mdr)';
+        formSubtitle.innerText = 'Få en professionel AI-assistent koblet direkte på din eksisterende hjemmeside (opsætning 995 kr.).';
+        btnText.innerText = 'Bestil Chat Widget';
 
         rowWidgetFields.style.display = 'none';
         fieldPhone.style.display = 'block';
         fieldMessage.style.display = 'block';
       } 
+      else if (mode === 'smart_site') {
+        tabSmartSite.classList.add('active');
+        formTypeInput.value = 'smart_site';
+        formTitle.innerText = 'Bestil UniklQ Smart Site (995 kr./mdr)';
+        formSubtitle.innerText = 'Få et komplet nyt webdesign med præ-installeret AI-widget, analytics og workflows (opsætning 4.995 kr.).';
+        btnText.innerText = 'Indsend forespørgsel på Smart Site';
+
+        rowWidgetFields.style.display = 'none';
+        fieldPhone.style.display = 'block';
+        fieldMessage.style.display = 'block';
+      }
       else if (mode === 'custom') {
         tabCustom.classList.add('active');
         formTypeInput.value = 'skraeddersyet';
-        formTitle.innerText = 'Indhent Skræddersyet Tilbud';
+        formTitle.innerText = 'Indhent Skræddersyet Enterprise Tilbud';
         formSubtitle.innerText = 'Lad os drøfte jeres specifikke workflows, integrationer og virksomhedsbehov.';
         btnText.innerText = 'Bliv kontaktet af en ekspert';
 
@@ -921,12 +955,12 @@
 
     // 1. DMA KATALOG DATA
     const dmaCatalog = [
+      { id: "smart_site_pack", type: "single", badge: "Web & Automation", title: "UniklQ Smart Site", desc: "Komplet hjemmesidesystem bygget med indbyggede AI-agenter, automatisk analytics-tracking og direkte integration til CRM og n8n workflows.", roi: "Slutter cirklen mellem din online tilstedeværelse og din drift. Fanger alle leads øjeblikkeligt og eliminerer manuelt opfølgningsarbejde." },
       { id: "posthus", type: "single", badge: "Mail & Modtagelse", title: "UniklQ Posthus", desc: "Overvåger din indbakke 24/7, sorterer indkommende e-mails, udarbejder professionelle svardeklarationer og gemmer bilag direkte i dit arkiv.", roi: "Sparer 10-15 timer om ugen på manuel e-mail sortering og sikrer, at ingen vigtige kundehenvendelser nogensinde falder igennem sprækkerne." },
       { id: "moedebooker", type: "single", badge: "Salg & Kalender", title: "Mødebooker DMA", desc: "Svarer potentielle kunder med det samme, kvalificerer deres behov og lægger en direkte mødeaftale i din kalender uden tidsspild.", roi: "Øger din salgskonvertering med op til 30% ved at fange varme leads, mens de er mest købsklar – også uden for normal arbejdstid." },
       { id: "skribent", type: "single", badge: "Tekst & SEO", title: "Skribent DMA", desc: "Skriver fængslende B2B-artikler, blogindlæg, nyhedsbreve og SEO-tekster skræddersyet til din virksomheds tone of voice.", roi: "Sikrer løbende synlighed på Google og sociale medier uden at du skal hyre et dyrt tekstbureau eller bruge aftener på at skrive indhold." },
       { id: "rykker", type: "single", badge: "Økonomi & Inkasso", title: "Rykker & Inkasso DMA", desc: "Overvåger ubetalte fakturaer i dit bogføringssystem og udsender automatisk gennemtænkte, høflige rykker-påmindelser til tiden.", roi: "Forbedrer din virksomheds likviditet og forkorter den gennemsnitlige betalingstid med op til 40% uden at skade kunderelationen." },
       { id: "tilbud", type: "single", badge: "Salg & Beregning", title: "Tilbuds-assistent DMA", desc: "Beregner hurtigt priser, sammensætter tilbudstekst og genererer en færdig PDF-kontrakt klar til afsendelse ud fra dine notater.", roi: "Sender tilbud ud på få minutter i stedet for dage. Først-til-mølle princippet vinder ofte ordren i konkurrenceprægede brancher." },
-      { id: "arkivar", type: "single", badge: "Dokumenter & ERP", title: "Arkivar DMA", desc: "Trækker automatisk data fra modtagne bilag, kontrakter og fakturaer, og gemmer dem fejlfrit i dit ERP, Google Drive eller NocoDB.", roi: "Fjerner 100% af manuelt indtastningsarbejde og minimerer risikoen for dyre tastefejl i regnskabet." },
       { id: "salgsmaskine", type: "team", badge: "Samlet Salgsafdeling", title: "UniklQ Salgs- & Mødebooking-maskine", desc: "En fuldt autonom salgsafdeling bestående af Leadindhenter, SoMe DMA, Mødebooker og Tilbuds-assistent der arbejder tæt sammen.", roi: "Leverer en komplet salgstragt fra første opmærksomhed til booket møde og sendt tilbud – svarende til en ekstra fuldtidssælger." },
       { id: "hr-center", type: "team", badge: "Samlet HR & Onboarding", title: "UniklQ HR & Onboarding-center", desc: "Sammenslutning af Onboarding DMA, Tolk DMA og Arkivar DMA. Tager hånd om nye medarbejdere og oversætter interne håndbøger.", roi: "Sikrer professionel, ensartet onboarding fra dag 1 og sparer HR-afdelingen for adskillige timers introduktionsarbejde pr. nyansat." }
     ];
@@ -986,7 +1020,12 @@
 
     function selectDmaForOrder() {
       closeModal();
-      switchFormMode('pro');
+      if (selectedDma && selectedDma.id === 'smart_site_pack') {
+        switchFormMode('smart_site');
+      } else {
+        switchFormMode('pro');
+      }
+
       const formElement = document.getElementById('onboarding');
       if (formElement) {
         formElement.scrollIntoView({ behavior: 'smooth' });
@@ -1001,46 +1040,25 @@
     const legalTexts = {
       terms: `
         <h4>1.1 Aftalegrundlag & Ydelser</h4>
-        <p>Nærværende vilkår gælder for alle aftaler indgået med UniklQ (CVR: 46184270) vedrørende udvikling, implementering og drift af Digitale Medarbejdere (DMA) samt tilhørende automatiseringer.</p>
+        <p>Nærværende vilkår gælder for alle aftaler indgået med UniklQ (CVR: 46184270) vedrørende udvikling af Smart Sites, implementering af Digitale Medarbejdere (DMA) samt tilhørende automatiseringer.</p>
         <h4>1.2 Betaling & Opsigelse</h4>
         <p><b>Opsætning:</b> Engangsgebyrer for opsætning og konfiguration faktureres ved aftaleindgåelse og forfalder før opstart.<br>
-        <b>Abonnement:</b> Månedlig drift faktureres forud d. 1. i hver måned med betalingsfrist på Netto 8 dage.<br>
+        <b>Abonnement:</b> Månedlig drift og hosting faktureres forud d. 1. i hver måned med betalingsfrist på Netto 8 dage.<br>
         <b>Opsigelse:</b> Aftalen kan opsiges af begge parter med et varsel på løbende måned + 30 dage.</p>
         <h4>1.3 Ansvarsbegrænsning & AI-forbehold</h4>
         <p>Vores Digitale Medarbejdere er baseret på avanceret sprogmodel-teknologi (LLM). UniklQ kan ikke holdes ansvarlig for utilsigtede fejl, fejlfortolkninger eller hallucinationer genereret af den digitale medarbejder. Kunden er forpligtet til løbende at stikprøvekontrollere svar og workflows.</p>
-        <h4>1.4 Tredjepartstjenester & Oppetid</h4>
-        <p>UniklQ tilstræber høj oppetid, men garanterer ikke uafbrudt drift. UniklQ tager forbehold for nedbrud eller forsinkelser forårsaget af tredjepartsleverandører (OpenAI, Hetzner, Vapi, Twilio m.fl.).</p>
       `,
       privacy: `
         <h4>2.1 Dataansvarlig</h4>
         <p>UniklQ er dataansvarlig for behandlingen af de personoplysninger, vi modtager om dig på vores hjemmeside (CVR: 46184270, Kontakt: unikiq@unikiq.dk).</p>
-        <h4>2.2 Brug af Digital Medarbejder</h4>
-        <p>Vi anvender digitale medarbejdere til at besvare forespørgsler, yde support og kvalificere leads. Samtaler logges for at sikre korrekt rådgivning og til løbende optimering. Data opbevares fortroligt og anvendes ikke til træning af eksterne, offentlige AI-modeller.</p>
-        <h4>2.3 Hvilke data indsamler vi?</h4>
-        <p><b>Almindelige oplysninger:</b> Navn, e-mail, telefonnummer, CVR og firmanavn oplyst ved kontakt.<br>
-        <b>Brugsdata:</b> IP-adresse og adfærd på hjemmesiden.<br>
-        <b>Klientdata:</b> Ved implementering af DMA'er behandler vi kun data nødvendige for løsningens funktion og altid underlagt en indgået Databehandleraftale (DPA).</p>
-        <h4>2.4 Dine rettigheder</h4>
-        <p>Du har til enhver tid ret til indsigt, berigtigelse, indsigelse samt anmodning om sletning ("retten til at blive glemt") ved skriftlig henvendelse til unikiq@unikiq.dk.</p>
+        <h4>2.2 Brug af Digital Medarbejder & Smart Sites</h4>
+        <p>Vi anvender digitale medarbejdere og Smart Sites til at besvare forespørgsler, yde support og kvalificere leads. Samtaler logges for at sikre korrekt rådgivning. Data opbevares fortroligt og anvendes ikke til træning af eksterne, offentlige AI-modeller.</p>
       `,
       gdpr: `
         <h4>3.1 Overholdelse af Databeskyttelsesforordningen</h4>
         <p>UniklQ overholder gældende EU-databeskyttelseslovgivning (GDPR). Vi sikrer, at alle personoplysninger behandles lovligt, rimeligt og på en gennemsigtig måde.</p>
-        <h4>3.2 Lukkede Kredsløb & Enterprise API (Zero Data Retention)</h4>
-        <p>Alle vores Digitale Medarbejdere kommunikerer via lukkede Enterprise API-forbindelser. Det garanteres, at hverken kundedata, forretningshemmeligheder eller samtalelogs anvendes af vore underleverandører (herunder OpenAI) til at træne offentlige AI-modeller.</p>
-        <h4>3.3 Dataplacering & EU-Hosting</h4>
+        <h4>3.2 Dataplacering & EU-Hosting</h4>
         <p>Vores primære infrastruktur afvikles på egne, dedikerede og sikrede servere i Frankfurt, Tyskland (Hetzner Online GmbH).</p>
-        <h4>3.4 Tekniske og Organisatoriske Sikkerhedsforanstaltninger</h4>
-        <p>Al datatrafik er krypteret med stærk SSL/TLS-kryptering (256-bit). Følsomme systemnøgler opbevares stærkt krypteret, og al adgang kræver to-faktor-godkendelse (2FA).</p>
-        <h4>Godkendte Underdatabehandlere:</h4>
-        <table>
-          <thead><tr><th>Leverandør</th><th>Formål</th><th>Dataplacering</th></tr></thead>
-          <tbody>
-            <tr><td>OpenAI Ireland Ltd.</td><td>AI-intelligens (LLM via API)</td><td>EU / USA (DPA sikret)</td></tr>
-            <tr><td>Hetzner Online GmbH</td><td>Serverhosting af infrastruktur</td><td>EU (Tyskland)</td></tr>
-            <tr><td>Make.com / Celonis</td><td>Workflow-automatisering</td><td>EU (Tyskland)</td></tr>
-          </tbody>
-        </table>
       `
     };
 
@@ -1094,8 +1112,8 @@
         return;
       }
 
-      // 3. Valider Telefonnummer (hvis udfyldt i Pro/Custom tilstand)
-      if ((formType === 'avanceret_dma' || formType === 'skraeddersyet') && phoneInput.value.trim() !== '') {
+      // 3. Valider Telefonnummer (hvis udfyldt)
+      if ((formType === 'avanceret_dma' || formType === 'skraeddersyet' || formType === 'smart_site') && phoneInput.value.trim() !== '') {
         if (!phoneRegex.test(phoneInput.value.trim())) {
           alert('Indtast venligst et gyldigt telefonnummer (min. 8 cifre).');
           phoneInput.focus();
@@ -1132,6 +1150,8 @@
 
           if (payload.type === 'widget') {
             alert('Tillykke! Din Chat Widget er oprettet. Tjek din e-mail for instruktioner og installeringskode.');
+          } else if (payload.type === 'smart_site') {
+            alert('Mange tak! Vi har modtaget din forespørgsel på et UniklQ Smart Site og vender tilbage til dig inden for få timer.');
           } else {
             alert('Mange tak for din henvendelse! Vi har modtaget dine oplysninger og vender tilbage til dig hurtigst muligt.');
           }
