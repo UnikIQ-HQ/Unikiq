@@ -241,7 +241,7 @@
     .unikiq-field label { font-size: 0.85rem; font-weight: 600; color: #ffffff; }
     .unikiq-optional { font-weight: 400; color: #94a3b8; }
 
-    .unikiq-field input[type="text"], .unikiq-field input[type="email"], .unikiq-field input[type="tel"], .unikiq-field textarea {
+    .unikiq-field input[type="text"], .unikiq-field input[type="email"], .unikiq-field input[type="password"], .unikiq-field input[type="tel"], .unikiq-field textarea {
       width: 100%; padding: 12px 16px; border: 1px solid var(--border-dark); border-radius: 12px; font-size: 0.95rem; color: #ffffff; outline: none; transition: all 0.2s ease; background-color: var(--card-inner-dark); font-family: 'Inter', sans-serif;
     }
     .unikiq-field textarea { resize: vertical; min-height: 90px; }
@@ -638,15 +638,26 @@
             />
           </div>
 
-          <div class="unikiq-field" id="field-phone" style="display:none;">
-            <label for="phone">Telefonnummer <span class="unikiq-optional">(Valgfrit)</span></label>
+          <div class="unikiq-field">
+            <label for="api_key">Vælg din Adgangskode (Til Portal/ChatLog) *</label>
             <input 
-              type="tel" 
-              id="phone" 
-              name="phone" 
-              placeholder="+45 12 34 56 78" 
+              type="password" 
+              id="api_key" 
+              name="api_key" 
+              placeholder="Vælg et personligt kodeord..." 
+              required 
             />
           </div>
+        </div>
+
+        <div class="unikiq-field" id="field-phone" style="display:none;">
+          <label for="phone">Telefonnummer <span class="unikiq-optional">(Valgfrit)</span></label>
+          <input 
+            type="tel" 
+            id="phone" 
+            name="phone" 
+            placeholder="+45 12 34 56 78" 
+          />
         </div>
 
         <div class="unikiq-field-row" id="row-widget-fields">
@@ -1122,6 +1133,7 @@
       
       const urlInput = document.getElementById('url');
       const emailInput = document.getElementById('email');
+      const apiKeyInput = document.getElementById('api_key');
       const phoneInput = document.getElementById('phone');
       const formType = document.getElementById('form_type').value;
 
@@ -1141,7 +1153,15 @@
         return;
       }
 
-      // 3. Valider Telefonnummer (hvis udfyldt)
+      // 3. Valider Adgangskode
+      const apiKeyValue = apiKeyInput.value.trim();
+      if (apiKeyValue.length < 4) {
+        alert('Vælg venligst en adgangskode på mindst 4 tegn.');
+        apiKeyInput.focus();
+        return;
+      }
+
+      // 4. Valider Telefonnummer (hvis udfyldt)
       if ((formType === 'avanceret_dma' || formType === 'skraeddersyet' || formType === 'smart_site') && phoneInput.value.trim() !== '') {
         if (!phoneRegex.test(phoneInput.value.trim())) {
           alert('Indtast venligst et gyldigt telefonnummer (min. 8 cifre).');
@@ -1160,6 +1180,7 @@
         type: formType,
         url: urlInput.value,
         email: emailValue,
+        api_key: apiKeyValue,
         phone: phoneInput.value || '',
         title: document.getElementById('title').value || '',
         brand_color: document.getElementById('brand_color').value,
@@ -1178,7 +1199,7 @@
           trackAnalyticsEvent('form_submit');
 
           if (payload.type === 'widget') {
-            alert('Tillykke! Din Chat Widget er oprettet. Tjek din e-mail for instruktioner og installeringskode.');
+            alert('Tillykke! Din Chat Widget er oprettet. Du kan nu logge ind på chathistorik.unikiq.dk med din valgte adgangskode!');
           } else if (payload.type === 'smart_site') {
             alert('Mange tak! Vi har modtaget din forespørgsel på et UniklQ Smart Site og vender tilbage til dig inden for få timer.');
           } else {
